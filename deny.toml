@@ -1,0 +1,15 @@
+# What cargo deny check holds the dependencies to: GPL-compatible licences, crates.io only, no known vulnerability.
+
+[graph]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[licenses]
+allow = ["GPL-3.0-or-later", "MIT", "Apache-2.0"]
+confidence-threshold = 0.9
+
+[bans]
+multiple-versions = "allow"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

@@ -1,0 +1,23 @@
+<!doctype html><meta charset=utf-8><style>
+* { box-sizing: border-box; margin: 0; }
+html, body { width: 1280px; height: 360px; }
+body { background: #1c1e26; font-family: system-ui, "Helvetica Neue", Arial, sans-serif; color: #fafafa; overflow: hidden; display: flex; align-items: center; gap: 56px; padding: 0 72px; }
+.mark { width: 150px; height: 150px; border-radius: 34px; background: #fbc711; display: grid; place-items: center; flex: none; }
+.bar { width: 78px; height: 78px; border-radius: 50%; border: 12px solid #1c1e26; border-top-color: transparent; }
+h1 { font-size: 70px; font-weight: 600; letter-spacing: -.025em; line-height: 1; }
+p { font-size: 26px; color: #c2c2cc; margin-top: 14px; }
+.chips { display: flex; gap: 10px; margin-top: 26px; }
+.chip { font-size: 15px; font-weight: 600; padding: 8px 15px; border-radius: 999px; background: #282b34; border: 1px solid rgba(255,255,255,.12); color: #e3e3ea; }
+.chip.on { background: #4b3c05; border-color: rgba(251,199,17,.45); color: #fde694; }
+</style>
+<div class=mark><div class=bar></div></div>
+<div>
+  <h1>Trindle crash reports</h1>
+  <p>Sends Trindle's crash notes, with nothing personal in them.</p>
+  <div class=chips>
+    <span class="chip on">Optional add-on</span>
+    <span class=chip>Each kind has a switch</span>
+    <span class=chip>Nothing personal</span>
+    <span class=chip>GPL v3</span>
+  </div>
+</div>

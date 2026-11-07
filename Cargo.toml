@@ -1,0 +1,23 @@
+[package]
+name = "trindle-crash-reports"
+version = "1.1.1"
+edition = "2021"
+rust-version = "1.85"
+resolver = "3"
+description = "Trindle crash reports: sends Trindle's own crash and error notes, with nothing personal, to its bug tracker"
+authors = ["Trindle <crash-reports@trindle.org>"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/trindle-os/trindle-crash-reports"
+
+[[bin]]
+name = "trindle-crash-reports"
+path = "src/main.rs"
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
